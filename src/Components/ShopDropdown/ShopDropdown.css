@@ -1,0 +1,51 @@
+.shop-menu {
+  position: relative;
+}
+
+.shop-menu-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  color: #142c4d;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.shop-menu-button:hover {
+  color: #0879d9;
+}
+
+.shop-menu-button span {
+  font-size: 9px;
+}
+
+.shop-menu-list {
+  position: absolute;
+  top: calc(100% + 18px);
+  left: -15px;
+  width: 250px;
+  padding: 8px 0;
+
+  background: #ffffff;
+  border: 1px solid #e5eaf0;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.shop-menu-item {
+  display: block;
+  padding: 12px 18px;
+  color: #24354b;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.shop-menu-item:hover {
+  background: #edf6ff;
+  color: #0879d9;
+}

@@ -1,0 +1,383 @@
+
+.home-page {
+  width: 100%;
+}
+
+/* GENERAL SECTION STYLING */
+
+.eyebrow {
+  display: block;
+  color: #b18d61;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin-bottom: 18px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #263b32;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.text-link:hover {
+  color: #b18d61;
+}
+
+/* INTRODUCTION */
+
+.intro-section {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 850px;
+}
+
+.intro-section .section-title {
+  margin-bottom: 22px;
+}
+
+.intro-section .section-subtitle {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  font-size: 14px;
+}
+
+.intro-section .text-link {
+  justify-content: center;
+}
+
+/* CATEGORIES */
+
+.categories-section {
+  padding: 85px 0;
+  background: #f0eee8;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.category-card {
+  height: 410px;
+  position: relative;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px;
+  color: white;
+  background: linear-gradient(
+    to top,
+    rgba(20, 30, 24, 0.9),
+    rgba(20, 30, 24, 0.05) 75%
+  );
+}
+
+.category-overlay span {
+  color: #e0c69f;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.category-overlay h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.category-overlay p {
+  font-size: 12px;
+  color: #e6e6e6;
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+.category-arrow {
+  position: absolute;
+  right: 25px;
+  bottom: 28px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ffffff80;
+  border-radius: 50%;
+}
+
+/* FEATURED PRODUCTS */
+
+.featured-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.featured-section .section-heading {
+  align-items: center;
+}
+
+.featured-section .section-subtitle {
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* WHY CHOOSE US */
+
+.why-section {
+  padding: 95px 0;
+  background: #263b32;
+  color: white;
+}
+
+.why-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 55px;
+}
+
+.why-heading .section-title {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.why-heading .section-subtitle {
+  color: #c6d0c9;
+  font-size: 14px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 35px 20px;
+  border: 1px solid #ffffff25;
+  transition: 0.3s;
+}
+
+.benefit-card:hover {
+  background: #ffffff10;
+  transform: translateY(-5px);
+}
+
+.benefit-card svg {
+  color: #d8be99;
+  margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+
+.benefit-card p {
+  font-size: 12px;
+  color: #c6d0c9;
+  line-height: 1.8;
+}
+
+/* TESTIMONIALS */
+
+.testimonial-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.testimonial-card {
+  max-width: 700px;
+  margin: 40px auto 0;
+  padding: 45px 35px;
+  background: #f0eee8;
+}
+
+.stars {
+  color: #bd965e;
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+.testimonial-card p {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  line-height: 1.8;
+  color: #263b32;
+  margin-bottom: 25px;
+}
+
+.testimonial-card h4 {
+  font-size: 13px;
+  color: #263b32;
+}
+
+.testimonial-card span {
+  display: block;
+  color: #888;
+  font-size: 11px;
+  margin-top: 7px;
+}
+
+/* CALL TO ACTION */
+
+.home-cta {
+  padding: 90px 0;
+  background: linear-gradient(
+    90deg,
+    rgba(24, 38, 30, 0.95),
+    rgba(24, 38, 30, 0.7)
+  ),
+  url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=80')
+  center/cover;
+  color: white;
+  text-align: center;
+}
+
+.home-cta span {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #d8be99;
+}
+
+.home-cta h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.2;
+  margin: 20px 0 30px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 25px;
+  background: #d8be99;
+  color: #263b32;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: white;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-card {
+    height: 350px;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .categories-section,
+  .why-section {
+    padding: 70px 0;
+  }
+
+  .featured-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    height: 350px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .featured-section .section-heading {
+    align-items: flex-start;
+  }
+
+  .testimonial-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 30px 20px;
+  }
+
+  .testimonial-card p {
+    font-size: 17px;
+  }
+
+  .category-card {
+    height: 320px;
+  }
+}

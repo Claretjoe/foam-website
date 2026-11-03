@@ -1,0 +1,166 @@
+
+.navbar {
+  background: #fff;
+  padding: 15px 6%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+  gap: 25px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  color: #263b32;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.brand-tagline {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links > a,
+.shop-toggle,
+.auth-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #292929;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active,
+.shop-toggle:hover {
+  color: #a78355;
+}
+
+.shop-menu {
+  position: relative;
+}
+
+.shop-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+.shop-dropdown {
+  position: absolute;
+  top: 35px;
+  left: -15px;
+  width: 210px;
+  padding: 12px;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shop-dropdown a {
+  font-size: 13px;
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth-links .signup-button {
+  background: #263b32;
+  color: white;
+  padding: 11px 19px;
+  border-radius: 5px;
+}
+
+.auth-links .signup-button:hover {
+  background: #3c594b;
+  color: white;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: relative;
+}
+
+.cart-count {
+  background: #d8be99;
+  color: #263b32;
+  border-radius: 50%;
+  min-width: 19px;
+  height: 19px;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  border: none;
+  background: none;
+  color: #263b32;
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 25px 6%;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .auth-links {
+    flex-wrap: wrap;
+  }
+
+  .shop-dropdown {
+    position: static;
+    margin-top: 12px;
+    box-shadow: none;
+    border: 1px solid #eee;
+  }
+}

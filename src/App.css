@@ -1,0 +1,40 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.page-container {
+  width: 90%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 26px;
+  background: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: transparent;
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    width: 92%;
+  }
+}

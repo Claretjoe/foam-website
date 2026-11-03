@@ -1,0 +1,50 @@
+
+.hero {
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  background:
+    linear-gradient(90deg, rgba(20,35,28,.85), rgba(20,35,28,.15)),
+    url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1800')
+    center/cover no-repeat;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-label {
+  color: #e4cba8;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 6vw, 68px);
+  line-height: 1.15;
+  margin: 22px 0;
+}
+
+.hero p {
+  max-width: 480px;
+  line-height: 1.8;
+  color: #f1eee8;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #d8be99;
+  color: #263b32;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero-button:hover {
+  background: white;
+}
